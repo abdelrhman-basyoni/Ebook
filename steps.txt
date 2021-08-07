@@ -1,0 +1,16 @@
+1- npm init -y
+2- create server.js (name as u want)
+3- change in the package.json the main key from main.js to the main file name ( in step2)
+4- create the structure we need those folders(controllers routes models middleware utils config)
+5- npm i express (install express)
+6-.gitignore
+7- npm i dotenv ( to make the process.env works )
+8- install cross-env nodemon
+9- add those scripts to package.json:
+"start": "cross-env Node_ENV=production node server",
+    "dev": "cross-env Node_ENV=development nodemon server",
+
+
+10- to create random bytes for secret keys for token :
+	- node
+	- require('crypto').randomBytes(64).toString('hex')

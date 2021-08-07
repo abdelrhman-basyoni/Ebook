@@ -1,0 +1,15 @@
+version: '1'
+services:
+  app:
+    container_name: Ebook
+    restart: always
+    build: .
+    ports: 
+      - '80:5000'
+    links: 
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports: 
+      - '27017:27017'

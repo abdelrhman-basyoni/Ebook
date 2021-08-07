@@ -1,0 +1,4 @@
+
+const paginator = (elementsNum, pagenNum) =>{
+
+}
